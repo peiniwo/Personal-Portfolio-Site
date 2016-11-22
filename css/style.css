@@ -65,7 +65,6 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -115,9 +114,13 @@ h4 {
 }
 h5 {
     color: #f57063;
+    line-height: 1.8;
 }
 p {
     margin-bottom: 20px;
+}
+.line-through, .line-through:hover {
+    text-decoration: line-through;
 }
 
 /* preloader
@@ -906,7 +909,7 @@ footer img {
 }
 
 .top-bar h1 {
-    font-size: 56px;
+    font-size: 50px;
     text-transform: uppercase;
     font-weight: 700;
     color: #393939;
@@ -1059,6 +1062,9 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+.form-control:focus {
+    box-shadow: none !important;
+}
 
 .btn-box {
     background: #f57063;
@@ -1125,9 +1131,13 @@ textarea:focus {
     font-weight: bold;
     position: absolute;
     left: 50%;
-    margin-left: -126.8px;
+    margin-left: -62.33px;
+}
+.p-botton {
+    margin-left: -115px !important;
 }
 .view-live-botton:hover {
+    color: #333;
     text-decoration: none;
     transform: scale(1.05, 1.05) !important;
 }
@@ -1188,6 +1198,13 @@ textarea:focus {
     margin: 0 auto;
     min-width: 400px;
 }
+figcaption {
+    text-align: center;
+    color: #333;
+    font-size: 11px;
+    padding-top: 15px;
+}
+
 /* Responsive media queries
 ==================================================*/
 
@@ -1216,7 +1233,15 @@ textarea:focus {
         height: 0px;
     }
     .no-right {
-        padding-left: 0;
+        padding-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .max-img {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 
@@ -1238,11 +1263,27 @@ textarea:focus {
         font-size: 23px;
     }
     .top-bar h1 {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 30px;
     }
     .portfolio .categories-grid .categories ul li {
         float: none;
+    }
+    .box-label a {
+        font-size: 17px !important;
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .next-page a, .prev-page a {
+        font-size: 20px !important;
+    }
+    .r-description, .l-description {
+        font-size: 11px !important;
+    }
+    .l-description {
+        line-height: 2.8 !important;
     }
 }
 
@@ -1255,6 +1296,11 @@ textarea:focus {
     }
     .main-container {
         padding: 50px 0;
+    }
+    .img-p {
+        float: none !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
 }
 
