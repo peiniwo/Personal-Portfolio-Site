@@ -406,7 +406,7 @@ p {
 
 .box-intro em {
     font-style: normal;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 b i:last-child {
@@ -417,7 +417,7 @@ b i:last-child {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #999;
-    line-height: 1.7
+    line-height: 1.7;
 }
 .about-trigger-div {
     margin-top: 50px;
