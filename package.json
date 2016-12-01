@@ -1,0 +1,35 @@
+{
+  "name": "peini-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "~4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peiniwo/Personal-Portfolio-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peiniwo/Personal-Portfolio-Site/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-validator": "^0.11.5",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "lightbox2": "^2.9.0",
+    "nodemailer": "^2.6.4",
+    "unxss": "^0.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}

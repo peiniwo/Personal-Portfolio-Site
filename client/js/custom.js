@@ -1,18 +1,17 @@
-$(window).load(function () {
-
+(function () {
     // preloader
-    $('#status').fadeOut(); // will first fade out the loading animation
+    // $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(550).css({
-        'overflow': 'visible'
-    });
-
-
+    // $('body').delay(550).css({
+    //     'overflow': 'visible'
+    // });
     //  isotope
     var $container = $('.portfolio_container');
-    $container.isotope({
-        filter: '*',
-    });
+    if ($container.length) {
+        $container.isotope({
+            filter: '*',
+        });
+    }
 
     $('.portfolio_filter a').click(function () {
         $('.portfolio_filter .active').removeClass('active');
@@ -28,7 +27,6 @@ $(window).load(function () {
         });
         return false;
     });
-
     // back to top
     var offset = 300,
         offset_opacity = 1200,
@@ -50,7 +48,6 @@ $(window).load(function () {
             scrollTop: 0,
         }, scroll_top_duration);
     });
-
     // input
     $(".input-contact input, .textarea-contact textarea").focus(function () {
         $(this).next("span").addClass("active");
@@ -60,4 +57,4 @@ $(window).load(function () {
             $(this).next("span").removeClass("active");
         }
     });
-});
+})();
