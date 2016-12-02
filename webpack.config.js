@@ -35,7 +35,7 @@ var config = {
         chunks: false,
         chunkModules: false
     },
-    devtool: 'source-map',
+    devtool: env === 'development' ? 'source-map' : null,
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: {

@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack",
+    "postinstall": "webpack",
     "start": "node app.js"
   },
   "engines": {
@@ -27,9 +28,7 @@
     "jquery": "^3.1.1",
     "lightbox2": "^2.9.0",
     "nodemailer": "^2.6.4",
-    "unxss": "^0.1.1"
-  },
-  "devDependencies": {
+    "unxss": "^0.1.1",
     "webpack": "^1.13.3"
   }
 }

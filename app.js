@@ -18,18 +18,18 @@ var transporter = nodemailer.createTransport({
     }
 });
 app.get('/', function(request, response) {
-    // response.send('Hello World!');
     response.sendFile(path.join(__dirname + 'client/index.html'));
 });
 app.post('/contact', function (req, res) {
     var text = 'You have new message from contact form\n=============================\n' +
         '\nName: ' + req.body.name +
-        '\nEmail: ' + req.body.email;
+        '\nEmail: ' + req.body.email +
+        '\nMessage: ' + req.body.message;
     var mailOptions = {
         from: req.body.name + ' ' + req.body.email,
         to: 'peiniwo@gmail.com',
-        subject: 'Someone contact you via portfolio site: ' + req.body.subject, // Subject line
-        text: req.body.message
+        subject: 'Someone contact you via portfolio site: ' + req.body.subject,
+        text: text
     };
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
