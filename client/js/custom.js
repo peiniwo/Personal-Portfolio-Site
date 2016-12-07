@@ -15,6 +15,9 @@
             animationOptions: {
                 duration: 300,
                 animationEngine: "jquery"
+            },
+            masonry: {
+                columnWidth: '.portfolio_row'
             }
         });
         return false;
