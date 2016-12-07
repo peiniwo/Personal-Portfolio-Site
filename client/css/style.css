@@ -680,7 +680,12 @@ b i:last-child {
 
 /* portfolio section
 ==================================================*/
-
+.fun {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .portfolio .categories-grid span {
     font-size: 30px;
     margin-bottom: 30px;
