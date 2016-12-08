@@ -686,8 +686,8 @@ b i:last-child {
 .fun {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .portfolio .categories-grid span {
     font-size: 30px;
