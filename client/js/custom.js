@@ -1,6 +1,7 @@
 (function () {
     //  isotope
     var $container = $('.portfolio_container');
+    
     if ($container.length) {
         $container.isotope({
             filter: '*',
@@ -9,16 +10,14 @@
     $('.portfolio_filter a').click(function () {
         $('.portfolio_filter .active').removeClass('active');
         $(this).addClass('active');
+
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
             animationOptions: {
-                duration: 300,
+                duration: 500,
                 animationEngine: "jquery"
             },
-            masonry: {
-                columnWidth: '.portfolio_row'
-            }
         });
         return false;
     });
