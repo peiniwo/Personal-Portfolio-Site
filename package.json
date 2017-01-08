@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --progress --colors --watch",
     "postinstall": "webpack",
     "start": "node app.js"
   },

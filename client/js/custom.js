@@ -5,6 +5,7 @@
     if ($container.length) {
         $container.isotope({
             filter: '*',
+	    layoutMode: 'fitRows',
         });
     }
     $('.portfolio_filter a').click(function () {
