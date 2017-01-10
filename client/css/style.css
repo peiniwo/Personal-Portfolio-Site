@@ -527,7 +527,7 @@ b i:last-child {
 /* text rotate */
 
 .box-headline {
-    font-size: 130px;
+    font-size: 120px;
     line-height: 1.0;
 }
 
@@ -1220,6 +1220,9 @@ figcaption {
 ==================================================*/
 
 @media (max-width: 991px) {
+    .box-headline {
+        font-size: 100px;
+    }
     h4 {
         margin-top: 50px !important;
     }
@@ -1258,7 +1261,7 @@ figcaption {
 
 @media only screen and (max-width: 670px) {
     .box-headline {
-        font-size: 100px;
+        font-size: 80px;
     }
     .box-intro h5 {
         font-size: 12px;
@@ -1300,10 +1303,10 @@ figcaption {
 
 @media only screen and (max-width: 520px) {
     .box-headline {
-        font-size: 80px;
+        font-size: 60px;
     }
     .box-intro h5 {
-        font-size: 12px;
+        font-size: 11px;
     }
     .main-container {
         padding: 50px 0;
@@ -1320,7 +1323,7 @@ figcaption {
         font-size: 50px;
     }
     .box-intro h5 {
-        font-size: 12px;
+        font-size: 10px;
     }
     .top-bar h1 {
         font-size: 24px;
